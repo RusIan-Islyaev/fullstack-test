@@ -1,0 +1,481 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: #29374E;
+    background: #ffffff;
+}
+
+@font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.eot?98528485');
+    src: url('../font/fontello.eot?98528485#iefix') format('embedded-opentype'),
+        url('../font/fontello.woff?98528485') format('woff'),
+        url('../font/fontello.ttf?98528485') format('truetype'),
+        url('../font/fontello.svg?98528485#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: never;
+    
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+    
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+    
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+    
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+    
+    /* You can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+    
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.feature_icon .icon {
+    color: #0962e8;
+}
+
+.feature_card .feature_icon {
+    font-size: 24px;
+}
+
+.value_feature .feature_icon {
+    font-size: 36px;
+}
+
+/* Основной контейнер */
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+/* Шапка */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.logo {
+    font-size: 64px;
+    font-weight: 700;
+    color: #29374E;
+}
+
+.logo span {
+    background-color: #fff;
+    color: #0962e8;
+    padding: 0px 15px;
+    border-radius: 20px;
+    margin-left: 7px;
+}
+
+.nav_links {
+    display: flex;
+    gap: 10px;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: #666;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 3px 6px;
+}
+
+.nav_link.active {
+    background-color: #fff;
+    border-radius: 50%;
+    color: #0962e8;
+}
+
+.nav_link:hover {
+    color: #29374E;
+}
+
+/* Герой секция */
+.hero_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* gap: 60px; */
+    align-items: center;
+    position: relative;
+    padding-bottom: 65px;
+}
+
+.hero_content .h1 {
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: #29374E;
+    line-height: normal;
+    max-width: 79%;
+}
+
+.hero_content p {
+    font-size: 18px;
+    color: #29374E;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.hero_image {
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Особенности */
+.features_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    position: absolute;
+    bottom: -25px;
+    left: 60px; /* Добавляем левый отступ */
+    right: 60px; /* Добавляем правый отступ */
+    width: calc(100% - 120px); /* Вычитаем padding */
+    margin: 0 auto;
+}
+
+/* .feature_col {
+    padding: 0 10px;
+} */
+
+.feature_card {
+    background: #fff;
+    padding: 20px 16px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px #e3e3e3;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    /* gap: 22px; */
+    height: 100%;
+}
+
+.feature_icon {
+    width: 39px;
+    height: 39px;
+    background: #EFF9FF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature_title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #29374E;
+    text-align: left;
+}
+
+/* Продукты */
+.products_section {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.section_title {
+    font-size: 38px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #29374E;
+    line-height: normal;
+}
+
+.section_title span {
+    color: #0962e8;
+}
+
+.products_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.product_card {
+    background: #E9F6FF;
+    padding-left: 25px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.product_card .info {
+    min-width: 41%;
+}
+
+.info_img {
+    line-height: 0;
+}
+
+.product_card .info_img img {
+    object-fit: contain;
+    width: 100%;
+}
+
+.product_card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    color: #29374E;
+}
+
+.product_card p {
+    color: #000;
+    line-height: normal;
+    font-size: 14px;
+}
+
+/* Ценность */
+.value_section {
+    margin-bottom: 60px;
+}
+
+.value_content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.value_content h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: normal;
+}
+
+.value_content h2 span {
+    color: #0962e8;
+}
+
+.value_content p {
+    font-size: 14px;
+    line-height: normal;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.value_features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.value_feature {
+    text-align: center;
+}
+
+.value_feature h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.value_feature p {
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.value_info {
+    min-width: 50%;
+}
+
+/* Кнопки */
+.button_primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 38px;
+    background-color: #0962e8;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 400;
+    transition: transform 0.3s ease;
+    font-size: 18px;
+}
+
+.button_primary:hover {
+    transform: translateY(-2px);
+}
+
+.main_banner {
+    background-color: #cbecff;
+}
+
+.hero_image {
+    /* height: 680px; */
+    height: 100%;
+    width: 100%;
+}
+
+.hero_image img {           
+    /* width: 100%;
+    height: 100%; */
+    object-fit: contain;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .main_container {
+        padding: 40px 20px;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 20px;
+        align-items: end;
+    }
+
+    .hero_section {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        grid-auto-flow: dense;
+    }
+
+    .hero_content h1 {
+        font-size: 36px;
+    }
+
+    .features_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .products_grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .main_container {
+        padding: 30px 15px;
+    }
+
+    .hero_content h1 {
+        font-size: 28px;
+    }
+
+    .features_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section_title {
+        font-size: 24px;
+    }
+
+    .value_section {
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .hero_image {
+        order: 1
+    }
+    
+    .features_grid {
+        position: relative;
+        bottom: inherit;
+        order: 3;
+        width: 100%;
+        left: initial;
+        right: initial;
+    }
+
+    .hero_content {
+        order: 2;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero_image img {           
+        width: 100%;
+    }
+
+    .hero_content .h1 {
+        max-width: 100%;
+    }
+
+    .features_grid {
+        padding-bottom: 40px;
+    }
+
+    /* .hero_image {
+        height: 525px;
+    } */
+
+    .button_primary {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .value_feature {
+        box-shadow: 10px 10px 10px #e3e3e3;
+        border-radius: 20px;
+    }
+
+    .value_content h2 {
+        font-size: 24px;
+    }
+
+    .value_info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .value_content {
+        flex-wrap: wrap;
+    }
+
+    .products_section {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width: 1080px) {
+    .hero_image img {
+        margin-right: -90px;
+    }
+}
