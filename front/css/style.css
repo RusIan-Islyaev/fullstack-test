@@ -69,14 +69,12 @@ body {
     font-size: 36px;
 }
 
-/* Основной контейнер */
 .container {
     max-width: 1024px;
     margin: 0 auto;
     padding: 0 60px;
 }
 
-/* Шапка */
 .header {
     display: flex;
     justify-content: space-between;
@@ -121,11 +119,9 @@ body {
     color: #29374E;
 }
 
-/* Герой секция */
 .hero_section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* gap: 60px; */
     align-items: center;
     position: relative;
     padding-bottom: 65px;
@@ -157,22 +153,17 @@ body {
     font-weight: 600;
 }
 
-/* Особенности */
 .features_grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     position: absolute;
     bottom: -25px;
-    left: 60px; /* Добавляем левый отступ */
-    right: 60px; /* Добавляем правый отступ */
-    width: calc(100% - 120px); /* Вычитаем padding */
+    left: 60px;
+    right: 60px;
+    width: calc(100% - 120px);
     margin: 0 auto;
 }
-
-/* .feature_col {
-    padding: 0 10px;
-} */
 
 .feature_card {
     background: #fff;
@@ -182,7 +173,6 @@ body {
     text-align: center;
     display: flex;
     justify-content: space-between;
-    /* gap: 22px; */
     height: 100%;
 }
 
@@ -203,7 +193,6 @@ body {
     text-align: left;
 }
 
-/* Продукты */
 .products_section {
     margin-top: 80px;
     margin-bottom: 80px;
@@ -264,7 +253,6 @@ body {
     font-size: 14px;
 }
 
-/* Ценность */
 .value_section {
     margin-bottom: 60px;
 }
@@ -319,7 +307,6 @@ body {
     min-width: 50%;
 }
 
-/* Кнопки */
 .button_primary {
     display: inline-flex;
     align-items: center;
@@ -343,139 +330,10 @@ body {
 }
 
 .hero_image {
-    /* height: 680px; */
     height: 100%;
     width: 100%;
 }
 
 .hero_image img {           
-    /* width: 100%;
-    height: 100%; */
     object-fit: contain;
-}
-
-/* Адаптивность */
-@media (max-width: 768px) {
-    .main_container {
-        padding: 40px 20px;
-    }
-
-    .header {
-        flex-direction: column;
-        gap: 20px;
-        align-items: end;
-    }
-
-    .hero_section {
-        grid-template-columns: 1fr;
-        gap: 40px;
-        grid-auto-flow: dense;
-    }
-
-    .hero_content h1 {
-        font-size: 36px;
-    }
-
-    .features_grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .products_grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 480px) {
-    .main_container {
-        padding: 30px 15px;
-    }
-
-    .hero_content h1 {
-        font-size: 28px;
-    }
-
-    .features_grid {
-        grid-template-columns: 1fr;
-    }
-
-    .section_title {
-        font-size: 24px;
-    }
-
-    .value_section {
-        padding: 40px 20px;
-    }
-}
-
-@media (max-width: 1023px) {
-    .hero_image {
-        order: 1
-    }
-    
-    .features_grid {
-        position: relative;
-        bottom: inherit;
-        order: 3;
-        width: 100%;
-        left: initial;
-        right: initial;
-    }
-
-    .hero_content {
-        order: 2;
-    }
-
-    .container {
-        padding: 0 15px;
-    }
-    
-    .hero_image img {           
-        width: 100%;
-    }
-
-    .hero_content .h1 {
-        max-width: 100%;
-    }
-
-    .features_grid {
-        padding-bottom: 40px;
-    }
-
-    /* .hero_image {
-        height: 525px;
-    } */
-
-    .button_primary {
-        width: 100%;
-        justify-content: center;
-    }
-
-    .value_feature {
-        box-shadow: 10px 10px 10px #e3e3e3;
-        border-radius: 20px;
-    }
-
-    .value_content h2 {
-        font-size: 24px;
-    }
-
-    .value_info {
-        width: 100%;
-        text-align: center;
-    }
-
-    .value_content {
-        flex-wrap: wrap;
-    }
-
-    .products_section {
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
-}
-
-@media (min-width: 1080px) {
-    .hero_image img {
-        margin-right: -90px;
-    }
 }

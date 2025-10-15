@@ -1,0 +1,165 @@
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 20px;
+        align-items: end;
+    }
+
+    .hero_section {
+        gap: 40px;
+        grid-auto-flow: dense;
+    }
+
+    .hero_content h1 {
+        font-size: 36px;
+    }
+
+    .features_grid {
+        gap: 15px;
+    }
+
+    .products_grid {
+        grid-template-columns: 1fr;
+    }
+
+     .hero_content h1 {
+        font-size: 28px;
+    }   
+
+    .section_title {
+        font-size: 24px;
+    }
+
+    .feature_card {
+        flex-wrap: wrap;
+        flex-direction: column-reverse; 
+        padding: 0 15px 15px;
+        box-shadow: none;
+        justify-content: flex-end;
+    }
+
+    .main_banner .container {
+        padding: 0;
+    }
+
+     .hero_content {
+        order: 2;
+        padding: 0 15px;
+    }
+}
+
+@media (min-width:320px) and (max-width: 374px) {
+    .hero_content .h1, .feature_title {
+        font-size: 12px;
+    }
+
+    .features_grid {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .hero_section {
+        grid-template-columns: 1fr;
+    }
+
+    .hero_image {
+        order: 1
+    }
+    
+    .features_grid {
+        position: relative;
+        bottom: inherit;
+        order: 3;
+        width: 100%;
+        left: initial;
+        right: initial;
+        padding: 40px 15px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero_content {
+        order: 2;
+    }
+
+    .container {
+        padding: 0 15px;
+        gap: 0;
+    }
+    
+    .hero_image img {           
+        width: 100%;
+    }
+
+    .hero_content .h1 {
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+    .button_primary {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .value_feature {
+        box-shadow: 10px 10px 10px #e3e3e3;
+        border-radius: 20px;
+        padding: 0 10px;
+    }
+
+    .value_content h2 {
+        font-size: 24px;
+    }
+
+    .value_info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .value_content {
+        flex-wrap: wrap;
+    }
+
+    .products_section {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .product_card h3 {
+        font-size: 16px;
+    }
+
+    .header {
+        padding: 0;
+    }
+
+    .logo {
+        font-size: 48px;
+    }
+
+    .product_card p {
+        font-size: 13px;
+    }
+
+    .product_card {
+        padding-left: 15px;
+    }        
+
+    .product_card .info {
+        min-width: 50%;
+    }
+
+    .product_card h3 {
+        margin-top: 15px;
+    }
+
+    .value_feature .feature_icon {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1080px) {
+    .hero_image img {
+        margin-right: -90px;
+    }
+}
