@@ -211,11 +211,6 @@ class User {
             $errors['email'] = 'Please enter a valid email address';
         }
         
-        // Phone length validation
-        if ($phone && strlen($phone) < 10) {
-            $errors['phone'] = 'Phone number is too short';
-        }
-        
         return [
             'errors' => $errors,
             'cleaned_data' => [

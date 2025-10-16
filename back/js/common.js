@@ -178,7 +178,6 @@ let common = {
     },
 
     user_edit_update: (user_id = 0) => {
-        console.log('test')
         // vars
         let data = {
             user_id: user_id,
